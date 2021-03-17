@@ -23,18 +23,18 @@ function doneSetting() {
     hr0.style.display = "none";
     const hr1 = document.querySelector("#hr1")
     hr1.style.display = "none";
-const list = document.querySelector("#list").innerHTML
+    const list = document.querySelector("#list").innerHTML
     const settingTab0 = document.querySelector("#settingTab0").value;
     settings.addEventListener('click', setting);
     const settingGroup0 = document.querySelector("#settingGroup");
     const div = document.querySelectorAll(".textSettings");
     const checkedList = document.querySelector("#checkedList");
     if (settingTab0 == 0) {
-        hr0.style.display = "block";
-        hr1.style.display = "block";
+    hr0.style.display = "block";
+    hr1.style.display = "block";
         if ((list !== undefined) && (list !== "")) {
             div.forEach(function(elm) {
-                checkedList.appendChild(elm);
+            checkedList.appendChild(elm);
             });
         }
     }
@@ -43,7 +43,6 @@ const list = document.querySelector("#list").innerHTML
     alert ("Settings Saved");
     console.log(onCheck);
     console.log ("setting group closed");
-    
 }
 
 function add() {
@@ -75,7 +74,7 @@ function add() {
         alert("Enter some text");
     }
 }
-
+                
 function checked(evt) {
     let ifChecked = evt.target.checked;
     let item = evt.target.parentNode;
@@ -96,17 +95,15 @@ function checked(evt) {
             item.removeAttribute("class", "textSettings");
         }
     }
-    
 }
 
 function reset() {
     let confirm1 = confirm("Continuing will erase everything from your list. This action is irreversible. Click OK to continue. ");
-    document.querySelector("#reset").setAttribute("disabled", "");
     if (confirm1 == true) {
+        document.querySelector("#reset").setAttribute("disabled", "");
         document.querySelector("#list").innerHTML = "";
         document.querySelector("#checkedList").innerHTML = "";
     }
-
 }
 
 function removeLine(evt) {
