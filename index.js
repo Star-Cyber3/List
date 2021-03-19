@@ -85,9 +85,9 @@ function edit(evt) {
     let div = evt.target.parentNode;
     let editInput = div.getElementsByTagName("INPUT")[0];
     let content = evt.target.textContent;
-    evt.target.style.display = "none";
     editInput.value = content;
     editInput.style.display = "inline";
+    evt.target.style.display = "none";
 }
                 
 function checked(evt) {
