@@ -84,7 +84,7 @@ function add() {
 function edit(evt) {
     let div = evt.parentNode;
     let editInput = div.getElementsByTagName("INPUT");
-    alert(editInput); 
+    alert(editInput);
 }
                 
 function checked(evt) {
