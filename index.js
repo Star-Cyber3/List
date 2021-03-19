@@ -61,6 +61,10 @@ function add() {
         let newSpan = document.createElement("SPAN");
         newSpan.textContent = val;
         newDiv.append(newSpan);
+        let newEditInput = document.createElement("INPUT");
+        newEditInput.value = val;
+        newEditInput.style.display = "inline";
+        newDiv.append(newEditInput);
         let newDeleteButton = document.createElement("SPAN");
         newDeleteButton.innerHTML = " &times";
         newDeleteButton.setAttribute("class", "removeLine");
