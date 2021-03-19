@@ -59,11 +59,13 @@ function add() {
         newCheck.setAttribute("class", "check");
         newDiv.append(newCheck);
         let newSpan = document.createElement("SPAN");
+        newSpan.addEventListener("click", edit);
         newSpan.textContent = val;
         newDiv.append(newSpan);
         let newEditInput = document.createElement("INPUT");
+        newEditInput.setAttribute("class", "editInput");
         newEditInput.value = val;
-        newEditInput.style.display = "inline";
+        newEditInput.style.display = "none";
         newDiv.append(newEditInput);
         let newDeleteButton = document.createElement("SPAN");
         newDeleteButton.innerHTML = " &times";
@@ -77,6 +79,12 @@ function add() {
     } else {
         alert("Enter some text");
     }
+}
+
+function edit(evt) {
+    let div = evt.parentNode;
+    let editInput = div.getElementsByTagName("INPUT");
+    alert(editInput);
 }
                 
 function checked(evt) {
