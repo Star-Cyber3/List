@@ -83,7 +83,7 @@ function add() {
 
 function edit(evt) {
     let div = evt.parentNode;
-    let editInput = div.getElementsByTagName("INPUT");
+    let editInput = div.getElementsByTagName("INPUT")[0];
     alert(editInput);
 }
                 
