@@ -109,6 +109,16 @@ function reset() {
 function removeLine(evt) {
     let removeButton = evt.target.parentNode;
     removeButton.remove();
+    /*
+    const list = document.querySelector("#list").textContent;
+    const checkedList = document.querySelector("#checkedList").textContent;
+    alert(list)
+    alert(checkedList)
+    if ((list == undefined) || (list == "")) {
+        document.querySelector("#reset").setAttribute("disabled", "");
+        alert("running")
+    }
+    */
 }
 
 function init() {
