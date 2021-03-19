@@ -84,7 +84,10 @@ function add() {
 function edit(evt) {
     let div = evt.target.parentNode;
     let editInput = div.getElementsByTagName("INPUT")[0];
-    alert(editInput);
+    let content = evt.target.textContent;
+    evt.target.style.display = "none";
+    editInput.value = content;
+    editInput.style.display = "inline";
 }
                 
 function checked(evt) {
