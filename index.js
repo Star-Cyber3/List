@@ -82,7 +82,7 @@ function add() {
 }
 
 function edit(evt) {
-    let div = evt.parentNode;
+    let div = evt.target.parentNode;
     let editInput = div.getElementsByTagName("INPUT")[0];
     alert(editInput);
 }
