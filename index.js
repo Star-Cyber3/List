@@ -109,6 +109,11 @@ function reset() {
 function removeLine(evt) {
     let removeButton = evt.target.parentNode;
     removeButton.remove();
+    let lineResetButton = document.querySelector("#reset");
+    lineResetButton.removeAttribute("disabled", "");
+    if (removeButton) {
+      lineResetButton.setAttribute("disabled", "")
+    };
 }
 
 function init() {
