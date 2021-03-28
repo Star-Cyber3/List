@@ -12,4 +12,5 @@ currently being supported with security updates.
 --->
 ## Reporting a Vulnerability
 
-Report a vulnerability in the issues section. Open an issue, and title it the vulnerability. Then write a description. 
+Report a vulnerability in the issues section. Open an issue using the Security Vulnerability template. It will automatically assign the help wanted and invalid labels. Then write a description.  
+You can also [click here](https://github.com/Star-Cyber3/List/issues/new?assignees=&labels=help+wanted%2C+invalid&template=security-vulnerability.md&title=) to go to the issue creating page with the template. 
