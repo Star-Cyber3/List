@@ -12,4 +12,4 @@ currently being supported with security updates.
 --->
 ## Reporting a Vulnerability
 
-Report a vulnerability in the issues section. Open an issue, and title it the vulnerability. Then write a description. 
+Report a vulnerability in the issues section. Open an issue using the Security Vulnerability template. It will automatically assign the. Then write a description. 
