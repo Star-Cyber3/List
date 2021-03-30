@@ -115,8 +115,3 @@ function removeLine(evt) {
       lineResetButton.setAttribute("disabled", "")
     };
 }
-
-function init() {
-    console.log("DOM is ready");
-    document.querySelector("#reset").setAttribute("disabled", "");
-}

@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="style.css">
         <title>List</title>
     </head>
-    <body onload="init();">
+    <body>
         <header>
             <label for="textInput">Input Item Name</label>
             <input type="text" id="textInput" placeholder="Enter Item Name...">
             <button onclick="add();" id="submit">Submit</button>
-            <button onclick="reset();" id="reset">Clear all</button>
+            <button onclick="reset();" id="reset" disabled>Clear all</button>
             <hr>
         </header>
         <main>
