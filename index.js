@@ -110,8 +110,3 @@ function removeLine(evt) {
     let removeButton = evt.target.parentNode;
     removeButton.remove();
 }
-
-function init() {
-    console.log("DOM is ready");
-    document.querySelector("#reset").setAttribute("disabled", "");
-}
