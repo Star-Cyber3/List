@@ -4,6 +4,10 @@
     right: 10px;
 }
 
+footer {
+    height: 80px;
+}
+
 #github {
     position: fixed;
     bottom: 10px;
