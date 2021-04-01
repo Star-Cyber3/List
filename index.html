@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="style.css">
         <title>List</title>
     </head>
-    <body onload="init();">
+    <body>
         <header>
             <label for="textInput">Input Item Name</label>
             <input type="text" id="textInput" placeholder="Enter Item Name...">
             <button onclick="add();" id="submit">Submit</button>
-            <button onclick="reset();" id="reset">Clear all</button>
+            <button onclick="reset();" id="reset" disabled>Clear all</button>
             <hr>
         </header>
         <main>
@@ -37,6 +37,7 @@
         </div>
         <footer>
             <img src="https://images-na.ssl-images-amazon.com/images/I/51qs1z1-n9L.png" width="50" height="50" alt="Settings" title="Settings" id="settings">
+            <a href="https://github.com" target="_blank" rel="noopener"><img src="GitHub-Mark-64px.png" width="50" height="50" alt="GitHub Web" title="To GitHub!" id="github"></a>
         </footer>
         <div>
             <script src="index.js"></script>
