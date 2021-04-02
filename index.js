@@ -97,7 +97,7 @@ function edit(evt) {
 }
 
 function finishEdit(evt) {
-    if(evt.keyCode = 13) {
+    if(evt.keyCode === 13) {
         console.log("done editing");
         console.log("new item text content = " + editInput.value);
         editInput.style.display = "none";
