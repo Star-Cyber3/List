@@ -85,6 +85,7 @@ let editInput;
 let targetForEditing;
 
 function edit(evt) {
+    console.log("editing started");
     let div = evt.target.parentNode;
     let content = evt.target.textContent;
     targetForEditing = evt.target;
@@ -97,7 +98,8 @@ function edit(evt) {
 
 function finishEdit(evt) {
     if(evt.keyCode = 13) {
-        console.log("confirm"); 
+        console.log("done editing");
+        console.log("new item text content = " + editInput.value);
         editInput.style.display = "none";
         targetForEditing.textContent = editInput.value;
     }
