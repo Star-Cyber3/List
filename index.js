@@ -81,12 +81,26 @@ function add() {
     }
 }
 
+let editInput;
+let targetForEditing;
+
 function edit(evt) {
     let div = evt.target.parentNode;
     let content = evt.target.textContent;
-    evt.target.parentNode.getElementsByTagName("input")[1].style.display = "inline";
-    evt.target.parentNode.getElementsByTagName("input")[1].textContent = content;
-    evt.target.style.display = "none";
+    targetForEditing = evt.target;
+    targetForEditing.style.display = "none";
+    editInput = div.getElementsByTagName("input")[1];
+    editInput.style.display = "inline";
+    editInput.textContent = content;
+    editInput.addEventListener("keydown", finishEdit);
+}
+
+function finishEdit(evt) {
+    if(evt.keyCode = 13) {
+        console.log("confirm"); 
+        editInput.style.display = "none";
+        targetForEditing.textContent = editInput.value;
+    }
 }
                 
 function checked(evt) {
