@@ -84,8 +84,8 @@ function add() {
 function edit(evt) {
     let div = evt.target.parentNode;
     let content = evt.target.textContent;
-    evt.target.parentNode.getElementsByTagName("input")[0].style.display = "inline";
-    evt.target.parentNode.getElementsByTagName("input")[0].textContent = content;
+    evt.target.parentNode.getElementsByTagName("input")[1].style.display = "inline";
+    evt.target.parentNode.getElementsByTagName("input")[1].textContent = content;
     evt.target.style.display = "none";
 }
                 
