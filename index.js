@@ -102,6 +102,7 @@ function finishEdit(evt) {
         console.log("new item text content = " + editInput.value);
         editInput.style.display = "none";
         targetForEditing.textContent = editInput.value;
+        targetForEditing.style.display = "inline";
     }
 }
                 
