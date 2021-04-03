@@ -16,7 +16,8 @@ Then click submit or press enter.
 ## Checking Items
 Check Items using the checkbox on the left side of the item. Depending on which setting you have chosen you item will either go below the second line and get greyed and corssed out, or just remain there greyed and crossed out. 
 
-<img src="https://user-images.githubusercontent.com/80070589/113462844-2e14bb00-93e0-11eb-9eb9-e58c3cdc96bd.png" alt="example2" width="400">
+<img src="https://user-images.githubusercontent.com/80070589/113462844-2e14bb00-93e0-11eb-9eb9-e58c3cdc96bd.png" alt="example2" width="350">
+Example: Checked out Item with move to bottom setting enabled. 
 
 ## Deleting Items
 Delete Items using the small x buttons on the right side of the item. 
