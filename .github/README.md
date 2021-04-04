@@ -39,8 +39,11 @@ You can now set if you want the item to move when checked or star in place.
 More settings should come soon! 
 
 # Feature Request
-## Requesting a feature
-You can request a feature in the discussion feature request. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion"). 
+### Requesting a feature
+You can request a feature in the discussion feature request. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion"). We will create an issue if the community thinks the idea is good. 
+
+### Rating a feature
+
 
 # Contributing
 Please see [CONTRIBUTING.md](https://github.com/Star-Cyber3/List/blob/194290ed91c5718990f871eaf71321f33e8387cb/.github/CONTRIBUTING.md)  
