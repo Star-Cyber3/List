@@ -20,7 +20,7 @@ Check Items using the checkbox on the left side of the item. Depending on which 
 <img src="https://user-images.githubusercontent.com/80070589/113462844-2e14bb00-93e0-11eb-9eb9-e58c3cdc96bd.png" width="350">
 Example: Checked out Item with move to bottom setting enabled. 
 
-### Deleting Items
+## Deleting Items
 Delete Items using the small x buttons on the right side of the item. 
 
 <img src="https://user-images.githubusercontent.com/80070589/113523255-eae35500-9563-11eb-9be5-e5cbfb7d2b59.png" width="350">
