@@ -37,7 +37,7 @@ To go into settings, click the small gear icon at the bottom left of the page.
 A small blue box should appear under the first line. 
 You can now set various settings. 
 
-### The checked item option setting
+### The Checked Item option
 With the checked item option setting, you can set if you want the item to go below the second line when checked, or just remain there. The item will always be grey and crossed out when checked, no matter the setting. 
 
 <img src="https://user-images.githubusercontent.com/80070589/113523532-32b6ac00-9565-11eb-8d4e-cf8a6a135f74.png" width="350">
@@ -48,8 +48,8 @@ More settings will come soon!
 ## Requesting a feature
 You can request a feature in the discussion Feature Request. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion"). We will create an issue if the community thinks the idea is good. 
 
-## Rating a feature
-Go to the discussion Feature Request and see if there are any new ideas. If there are you can reply to the comment underneath. Please reply if you think this is a good idea or bad idea. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion").
+## Rating a Feature Request
+Go to the discussion Feature Request and see if there are any new ideas. If there are you can reply to the comment underneath. Please reply to the comment if you think this is a good idea or bad idea. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion").
 
 # Contributing
 Please see [CONTRIBUTING.md](https://github.com/Star-Cyber3/List/blob/194290ed91c5718990f871eaf71321f33e8387cb/.github/CONTRIBUTING.md). Feel free to edit but do a pull request or fork.  
