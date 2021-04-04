@@ -15,7 +15,7 @@ Then click submit or press enter.
 <img src="https://user-images.githubusercontent.com/80070589/113462650-26a0e200-93df-11eb-8fa4-dd9ce808f32a.png" width="500">
 
 ## Checking Items
-Check Items using the checkbox on the left side of the item. Depending on which setting you have chosen you item will either go below the second line and get greyed and crossed out, or just remain there greyed and crossed out. 
+Check Items using the checkbox on the left side of the item. Depending on which setting you have chosen you item will either go below the second line and get greyed and crossed out, or just remain there greyed and crossed out. Go to how to set settings [here](https://github.com/Star-Cyber3/List#settings). 
 
 <img src="https://user-images.githubusercontent.com/80070589/113462844-2e14bb00-93e0-11eb-9eb9-e58c3cdc96bd.png" width="350">
 Example: Checked out Item with move to bottom setting enabled. 
