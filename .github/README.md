@@ -1,5 +1,5 @@
 # List
-A list that you can use to keep shopping items. Feel free to edit but do a pull request or fork.  
+A list that you can use to keep shopping items. 
 [Click here to go to website](https://star-cyber3.github.io/List/ "Link to go to website")
 
 # How to use
@@ -25,6 +25,9 @@ Delete Items using the small x buttons on the right side of the item.
 
 <img src="https://user-images.githubusercontent.com/80070589/113523255-eae35500-9563-11eb-9be5-e5cbfb7d2b59.png" width="350">
 
+<!--## Editing Items
+You can edit items by clicking the words on the item, and typing. Remember to press enter at the end. 
+-->
 ## Settings
 
 To go into settings, click the small gear icon at the bottom left of the page. 
@@ -49,4 +52,4 @@ You can request a feature in the discussion Feature Request. Go to discussions >
 Go to the discussion Feature Request and see if there are any new ideas. If there are you can reply to the comment underneath. Please reply if you think this is a good idea or bad idea. Go to discussions > Ideas > Feature Request, or [click this link](https://github.com/Star-Cyber3/List/discussions/30 "Link to go to discussion").
 
 # Contributing
-Please see [CONTRIBUTING.md](https://github.com/Star-Cyber3/List/blob/194290ed91c5718990f871eaf71321f33e8387cb/.github/CONTRIBUTING.md)  
+Please see [CONTRIBUTING.md](https://github.com/Star-Cyber3/List/blob/194290ed91c5718990f871eaf71321f33e8387cb/.github/CONTRIBUTING.md). Feel free to edit but do a pull request or fork.  
