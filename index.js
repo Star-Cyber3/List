@@ -34,7 +34,7 @@ function doneSetting() {
     hr1.style.display = "block";
         if ((list !== undefined) && (list !== "")) {
             div.forEach(function(elm) {
-            checkedList.appendChild(elm);
+                checkedList.appendChild(elm);
             });
         }
     }
