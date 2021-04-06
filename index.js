@@ -74,7 +74,7 @@ function add() {
         alert("Enter some text");
     }
 }
-                
+
 function checked(evt) {
     let ifChecked = evt.target.checked;
     let item = evt.target.parentNode;
@@ -107,14 +107,14 @@ function reset() {
 }
 
 function removeLine(evt) {
-    let removeButton = evt.target.parentNode;
+    const removeButton = evt.target.parentNode;
     removeButton.remove();
-    let list = document.querySelector("#list").innerHTML;
-    let checkedList = document.querySelector("#checkedList").innerHTML;
+    const list = document.querySelector("#list").innerHTML;
+    const checkedList = document.querySelector("#checkedList").innerHTML;
     if ((list == "") && (checkedList == "")) {
-        let resetButton = document.querySelector("#reset");
-        let disabled = resetButton.getAttribute("disabled");
-        if (disabled == null) {    
+        const resetButton = document.querySelector("#reset");
+        const disabled = resetButton.getAttribute("disabled");
+        if (disabled == null) {
             resetButton.setAttribute("disabled", "");
         }
     }
