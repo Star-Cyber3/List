@@ -112,6 +112,10 @@ function removeLine(evt) {
     let list = document.querySelector("#list").innerHTML;
     let checkedList = document.querySelector("#checkedList").innerHTML;
     if ((list == "") && (checkedList == "")) {
-        document.querySelector("#reset").setAttribute("disabled", "");
+        let resetButton = document.querySelector("#reset");
+        let disabled = resetButton.getAttribute("disabled");
+        if (disabled == null) {    
+            resetButton.setAttribute("disabled", "");
+        }
     }
 }
