@@ -109,4 +109,9 @@ function reset() {
 function removeLine(evt) {
     let removeButton = evt.target.parentNode;
     removeButton.remove();
+    let list = document.querySelector("#list").innerHTML;
+    let checkedList = document.querySelector("#checkedList").innerHTML;
+    if ((list == "") && (checkedList == "")) {
+        document.querySelector("#reset").setAttribute("disabled", "");
+    }
 }
