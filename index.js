@@ -30,11 +30,11 @@ function doneSetting() {
     const div = document.querySelectorAll(".textSettings");
     const checkedList = document.querySelector("#checkedList");
     if (settingTab0 == 0) {
-    hr0.style.display = "block";
-    hr1.style.display = "block";
+      hr0.style.display = "block";
+      hr1.style.display = "block";
         if ((list !== undefined) && (list !== "")) {
             div.forEach(function(elm) {
-            checkedList.appendChild(elm);
+                checkedList.appendChild(elm);
             });
         }
     }
@@ -74,7 +74,7 @@ function add() {
         alert("Enter some text");
     }
 }
-                
+
 function checked(evt) {
     let ifChecked = evt.target.checked;
     let item = evt.target.parentNode;
