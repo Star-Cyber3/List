@@ -61,6 +61,7 @@ function add() {
         let newEditInput = document.createElement("INPUT");
         newEditInput.setAttribute("class", "editInput1");
         newEditInput.value = val;
+        newEditInput.addEventListener('input', input);
         newDiv.append(newEditInput);
         let newDeleteButton = document.createElement("SPAN");
         newDeleteButton.innerHTML = " &times";
@@ -73,6 +74,12 @@ function add() {
         console.log("user input = " + val);
     } else {
         alert("Enter some text");
+    }
+}
+
+function input(evt) {
+    if (evt.target.value == "") {
+        evt.target.parentNode.remove();
     }
 }
 
