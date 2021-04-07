@@ -13,6 +13,7 @@ footer {
 }
 
 #github {
+    cursor: pointer;
     position: fixed;
     bottom: 10px;
     right: 60px;
@@ -30,19 +31,61 @@ footer {
     width: 350px;
 }
 
+
+#textInput {
+    border-radius: 10px;
+}
+
+#submit {
+    border-radius: 10px;
+    background-color: white;
+}
+
+#reset {
+    border-radius: 10px;
+    background-color: white;
+}
+
 .textSettings {
     color: grey;
     text-decoration: line-through;
+    font-size: large;
+    font-family: "Times New Roman", Times, serif;
 }
 
-.removeLine{
+.removeLine {
     color: red;
+    position: fixed;
+    right: 30px;
+    font-size: x-large;
 }
 
-.removeLine:hover{
+.removeLine:hover {
     cursor: pointer;
 }
 
 .check:hover {
     cursor: pointer;
+}
+
+.editInput1 {
+    height: 15px;
+    font-size: large;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+    max-width: 93%;
+    width: 93%;
+    color: black;
+    text-decoration: none;
+}
+
+.editInput {
+    height: 15px;
+    font-size: large;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+    max-width: 93%;
+    width: 93%;
+    color: grey;
+    text-decoration: line-through;
 }

@@ -51,21 +51,16 @@ function add() {
         let idNum;
         let list = document.querySelector("#list");
         let newDiv = document.createElement("DIV");
-        newDiv.style.textAlign = "left";
+        newDiv.setAttribute("class", "textSettings");
         list.append(newDiv);
         let newCheck = document.createElement("INPUT");
         newCheck.setAttribute("type", "checkbox");
         newCheck.addEventListener("click", checked);
         newCheck.setAttribute("class", "check");
         newDiv.append(newCheck);
-        let newSpan = document.createElement("SPAN");
-        newSpan.addEventListener("click", edit);
-        newSpan.textContent = val;
-        newDiv.append(newSpan);
         let newEditInput = document.createElement("INPUT");
-        newEditInput.setAttribute("class", "editInput");
+        newEditInput.setAttribute("class", "editInput1");
         newEditInput.value = val;
-        newEditInput.style.display = "none";
         newDiv.append(newEditInput);
         let newDeleteButton = document.createElement("SPAN");
         newDeleteButton.innerHTML = " &times";
@@ -81,37 +76,13 @@ function add() {
     }
 }
 
-let editInput;
-let targetForEditing;
-
-function edit(evt) {
-    console.log("editing started");
-    let div = evt.target.parentNode;
-    let content = evt.target.textContent;
-    targetForEditing = evt.target;
-    targetForEditing.style.display = "none";
-    editInput = div.getElementsByTagName("input")[1];
-    editInput.style.display = "inline";
-    editInput.textContent = content;
-    editInput.addEventListener("keydown", finishEdit);
-}
-
-function finishEdit(evt) {
-    if(evt.keyCode === 13) {
-        console.log("done editing");
-        console.log("new item text content = " + editInput.value);
-        editInput.style.display = "none";
-        targetForEditing.textContent = editInput.value;
-        targetForEditing.style.display = "inline";
-    }
-}
-                
 function checked(evt) {
     let ifChecked = evt.target.checked;
     let item = evt.target.parentNode;
+    let input = item.getElementsByTagName("INPUT")[1];
     if (ifChecked == true) {
         if (onCheck == 0) {
-            item.setAttribute("class", "textSettings");
+            input.setAttribute("class", "editInput");
             let checkedList = document.querySelector("#checkedList");
             checkedList.appendChild(item);
         } else if (onCheck == 1) {
@@ -119,11 +90,13 @@ function checked(evt) {
         }
     } else if (ifChecked == false) {
         if (onCheck == 0) {
-            item.removeAttribute("class", "textSettings");
+            item.removeAttribute("class", "editInput");
+            item.setAttribute("class", "editInput1");
             let list = document.querySelector("#list");
             list.appendChild(item);
         } else if (onCheck == 1) {
-            item.removeAttribute("class", "textSettings");
+            item.removeAttribute("class", "editInput");
+            item.setAttribute("class", "editInput1");
         }
     }
 }
