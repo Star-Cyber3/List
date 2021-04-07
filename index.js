@@ -1,4 +1,4 @@
-const enter = document.querySelector("#textInput");
+const enter = document.querySelector('#textInput');
 enter.addEventListener('keydown', addByEnter);
 
 function addByEnter(evt) {
@@ -7,15 +7,15 @@ function addByEnter(evt) {
     }
 }
 
-const settings = document.querySelector("#settings");
+const settings = document.querySelector('#settings');
 let onCheck = 0;
 settings.addEventListener('click', setting);
 
 function setting(evt) {
     const settingGroup0 = document.querySelector("#settingGroup");
-    settingGroup0.style.display = "block";
+    settingGroup0.style.display = 'block';
     settings.removeEventListener('click', setting);
-    console.log("setting group opened");
+    console.log('setting group opened');
 }
 
 function doneSetting() {
@@ -27,22 +27,28 @@ function doneSetting() {
     const settingTab0 = document.querySelector("#settingTab0").value;
     settings.addEventListener('click', setting);
     const settingGroup0 = document.querySelector("#settingGroup");
-    const div = document.querySelectorAll(".textSettings");
+    const div = document.querySelectorAll(".editInput").parentNode;
+    const div1 = document.querySelectorAll(".editInput1").parentNode;
     const checkedList = document.querySelector("#checkedList");
     if (settingTab0 == 0) {
-    hr0.style.display = "block";
-    hr1.style.display = "block";
+        hr0.style.display = "block";
+        hr1.style.display = "block";
         if ((list !== undefined) && (list !== "")) {
             div.forEach(function(elm) {
                 checkedList.appendChild(elm);
             });
         }
+        if ((checkedList !== undefined) && (checkedList !== "")) {
+            div1.forEach(function (elm) {
+                list.appendChild(elm);
+            });
+        }
     }
     settingGroup0.style.display = "none";
     onCheck = settingTab0;
-    alert ("Settings Saved");
+    alert ('Settings Saved');
     console.log(onCheck);
-    console.log ("setting group closed");
+    console.log ('setting group closed');
 }
 
 function add() {
@@ -117,7 +123,7 @@ function reset() {
     }
 }
 
-function removeLine(evt) {
+function removeLine (evt) {
     let removeButton = evt.target.parentNode;
     removeButton.remove();
 }
