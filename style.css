@@ -89,3 +89,11 @@ footer {
     color: grey;
     text-decoration: line-through;
 }
+
+.editInput:focus {
+    outline-width: 0;
+}
+
+.editInput1:focus {
+    outline-width: 0;
+}
