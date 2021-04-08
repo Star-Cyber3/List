@@ -1,8 +1,15 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 #settings {
     cursor: pointer;
     position: fixed;
     bottom: 10px;
     right: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 footer {
@@ -16,6 +23,8 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 60px;
+    height: 45px;
+    width: 45px;
 }
 
 #settingGroup {
