@@ -139,8 +139,6 @@ function reset() {
     }
 }
 
-function removeLine (evt) {
-    let removeButton = evt.target.parentNode;
 function removeLine(evt) {
     const removeButton = evt.target.parentNode;
     removeButton.remove();
