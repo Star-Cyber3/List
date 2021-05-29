@@ -42,6 +42,8 @@ With the checked item option setting, you can set if you want the item to go bel
 
 <img src="https://user-images.githubusercontent.com/80070589/113523532-32b6ac00-9565-11eb-8d4e-cf8a6a135f74.png" width="350">
 
+Remember to press done!
+
 More settings will come soon! 
 
 # Feature Request
