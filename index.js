@@ -1,4 +1,4 @@
-const enter = document.querySelector("#textInput");
+const enter = document.querySelector('#textInput');
 enter.addEventListener('keydown', addByEnter);
 // add enter listener for the text input;
 
@@ -10,7 +10,7 @@ function addByEnter(evt) {
     }
 }
 
-const settings = document.querySelector("#settings");
+const settings = document.querySelector('#settings');
 let onCheck = 0;
 settings.addEventListener('click', setting);
 // when settings is clicked, call setting();
@@ -32,51 +32,58 @@ function doneSetting() {
     const hr1 = document.querySelector("#hr1")
     hr1.style.display = "none";
     // make lines 2 and 3 disappeer;
-    const list = document.querySelector("#list").innerHTML
+    const list = document.querySelector("#list");
     const settingTab0 = document.querySelector("#settingTab0").value;
     // get settingTab0's value
     settings.addEventListener('click', setting);
     // re-add the click eventListener for setting;
     const settingGroup0 = document.querySelector("#settingGroup");
-    const div = document.querySelectorAll(".textSettings");
+    const div = document.querySelectorAll(".textSettings")
+    const div1 = document.querySelectorAll(".textSettings1");
+    alert(div1)
     const checkedList = document.querySelector("#checkedList");
     if (settingTab0 == 0) {
+        hr0.style.display = "block";
+        hr1.style.display = "block";
       // if the value of settingTab0 is 0 (option 1), then do this;
       hr0.style.display = "block";
       hr1.style.display = "block";
       // make lines two and three reappear;
         if ((list !== undefined) && (list !== "")) {
-            // for each element checked;
             div.forEach(function(elm) {
-              // append it to checkedList;
                 checkedList.appendChild(elm);
+            });
+        }
+        if ((checkedList !== undefined) && (checkedList !== "")) {
+            div1.forEach(function (elm) {
+                list.appendChild(elm);
             });
         }
     }
     settingGroup0.style.display = "none";
     // set the settingGroup's display to none;
     onCheck = settingTab0;
-    alert ("Settings Saved");
+    alert ('Settings Saved');
     console.log(onCheck);
-    console.log ("setting group closed");
+    console.log ('setting group closed');
 }
 
 function add() {
     const val = document.querySelector('#textInput').value;
     if((val !== undefined) && (val !== "")) {
-        let idNum;
         let list = document.querySelector("#list");
         let newDiv = document.createElement("DIV");
-        newDiv.style.textAlign = "left";
+        newDiv.setAttribute("class", "textSettings1");
         list.append(newDiv);
         let newCheck = document.createElement("INPUT");
         newCheck.setAttribute("type", "checkbox");
         newCheck.addEventListener("click", checked);
         newCheck.setAttribute("class", "check");
         newDiv.append(newCheck);
-        let newSpan = document.createElement("SPAN");
-        newSpan.textContent = val;
-        newDiv.append(newSpan);
+        let newEditInput = document.createElement("INPUT");
+        newEditInput.setAttribute("class", "editInput1");
+        newEditInput.value = val;
+        newDiv.append(newEditInput);
         let newDeleteButton = document.createElement("SPAN");
         newDeleteButton.innerHTML = " &times";
         newDeleteButton.setAttribute("class", "removeLine");
@@ -94,21 +101,33 @@ function add() {
 function checked(evt) {
     let ifChecked = evt.target.checked;
     let item = evt.target.parentNode;
+    let input = item.getElementsByTagName("INPUT")[1];
     if (ifChecked == true) {
         if (onCheck == 0) {
-            item.setAttribute("class", "textSettings");
+            input.removeAttribute("class", "editInput1")
+            item.removeAttribute("textSettings1")
+            input.setAttribute("class", "editInput");
+            item.setAttribute("class", "textSettings")
             let checkedList = document.querySelector("#checkedList");
             checkedList.appendChild(item);
         } else if (onCheck == 1) {
+            input.removeAttribute("class", "editInput1");
+            item.removeAttribute("textSettings1");
+            input.setAttribute("class", "editInput");
             item.setAttribute("class", "textSettings");
         }
     } else if (ifChecked == false) {
         if (onCheck == 0) {
+            input.removeAttribute("class", "editInput");
             item.removeAttribute("class", "textSettings");
+            input.setAttribute("class", "editInput1");
             let list = document.querySelector("#list");
             list.appendChild(item);
         } else if (onCheck == 1) {
+            input.removeAttribute("class", "editInput");
             item.removeAttribute("class", "textSettings");
+            input.setAttribute("class", "editInput1");
+            item.setAttribute("class", "textSettings1");
         }
     }
 }
