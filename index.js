@@ -121,6 +121,7 @@ function checked(evt) {
             input.removeAttribute("class", "editInput");
             item.removeAttribute("class", "textSettings");
             input.setAttribute("class", "editInput1");
+            item.setAttribute("class", "textSettings1");
             let list = document.querySelector("#list");
             list.appendChild(item);
         } else if (onCheck == 1) {
