@@ -40,7 +40,6 @@ function doneSetting() {
     const settingGroup0 = document.querySelector("#settingGroup");
     const div = document.querySelectorAll(".textSettings")
     const div1 = document.querySelectorAll(".textSettings1");
-    alert(div1)
     const checkedList = document.querySelector("#checkedList");
     if (settingTab0 == 0) {
         hr0.style.display = "block";
