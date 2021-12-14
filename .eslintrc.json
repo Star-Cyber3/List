@@ -8,5 +8,6 @@
         "ecmaVersion": 8
     },
     "rules": {
+      "no-unused-vars": [2, {"vars": "local", "args": "after-used"}]
     }
 }
