@@ -15,7 +15,7 @@ let onCheck = 0;
 settings.addEventListener('click', setting);
 // when settings is clicked, call setting();
 
-function setting(evt) {
+function setting() {
     const settingGroup0 = document.querySelector("#settingGroup");
     settingGroup0.style.display = "block";
     // make setting group visible;
