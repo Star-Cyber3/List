@@ -1,5 +1,10 @@
 const enter = document.querySelector('#textInput');
 enter.addEventListener('keydown', addByEnter);
+// Start file download.
+document.getElementById("dwn-btn").addEventListener("click", function(){
+// Start the download of yournewfile.txt file with the content from the text area
+    download();
+}, false);
 // add enter listener for the text input;
 
 function addByEnter(evt) {
@@ -153,4 +158,28 @@ function removeLine(evt) {
             resetButton.setAttribute("disabled", "");
         }
     }
+}
+
+
+
+
+
+
+
+function download() {
+  alert("hi");
+  let element = document.createElement('a');
+  element.href = 'data:text/html;charset=UTF-8,' + encodeURIComponent(document.documentElement.outerHTML);
+  element.setAttribute('download', 'list.html');
+  document.body.appendChild(element);
+  alert("hi");
+  element.click();
+  element.href = "style.css";
+  element.setAttribute('download', 'style.css');
+  element.click();
+  element.href = "index.js";
+  element.setAttribute('download', 'index.js');
+  element.click();
+  document.body.removeChild(element)
+
 }
