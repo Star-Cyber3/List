@@ -19,8 +19,11 @@ footer {
     width: 50px;
 }
 #dwn-btn {
-  bottom: 10px;
-  right: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 110px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 #github {
@@ -72,7 +75,7 @@ footer {
 
 .removeLine {
     color: red;
-    position: fixed;
+    position: absolute;
     right: 30px;
     font-size: x-large;
 }
