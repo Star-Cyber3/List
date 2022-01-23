@@ -1,25 +1,25 @@
 function init() {
-  /*---
-  let list = document.childNodes[1].childNodes[2].childNodes[3].childNodes[3].childNodes;
-  let checkedList = document.childNodes[1].childNodes[2].childNodes[3].childNodes[7].childNodes;
-  for (let i = 0; i < list.length; i++) {
-    let message = list[i].querySelectorAll('.message')[0].value;
-    list[i].querySelectorAll('.editInput1')[0].value = message;
-  }
-  for (let i = 0; i < checkedList.length; i++) {
-    let message = checkedList[i].querySelectorAll('.message')[0].value;
-    checkedList[i].querySelectorAll('.editInput1')[0].value = message;
-  }
-  ---*/
+  //---//
+  // add enter listener for the text input;
   const enter = document.querySelector('#textInput');
   enter.addEventListener('keydown', addByEnter);
   //---//
+  let list = document.querySelector("#list").childNodes;
+  let checkedList = document.querySelector("#checkedList").childNodes;
+  for (let i = 0; i < list.length; i++) {
+    let message = list[i].querySelectorAll('.message')[0].innerHTML;
+    list[i].querySelectorAll('.editInput1')[0].value = message;
+  }
+  for (let i = 0; i < checkedList.length; i++) {
+    let message = checkedList[i].querySelectorAll('.message')[0].innerHTML;
+    checkedList[i].querySelectorAll('.editInput')[0].value = message;
+  }
+  //---//
   // Start file download.
   document.getElementById("dwn-btn").addEventListener("click", function() {
-    // Start the download of yournewfile.txt file with the content from the text area
+    // Start the download of yournewfile.txt file with the content from the text area;
     download();
   }, false);
-  // add enter listener for the text input;
 }
 
 function addByEnter(evt) {
@@ -99,7 +99,7 @@ function add() {
     newCheck.addEventListener("click", checked);
     newCheck.setAttribute("class", "check");
     newDiv.appendChild(newCheck);
-    let newMessage = document.createElement("SPAN");
+    let newMessage = document.createElement("P");
     newMessage.setAttribute("class", "message");
     newMessage.style.display = "none";
     newMessage.innerHTML = val;
@@ -197,7 +197,7 @@ function removeLine(evt) {
 function download() {
   alert("hi");
   let element = document.createElement('a');
-  element.href = 'data:text/html;charset=UTF-8,' + encodeURIComponent(document.documentElement.outerHTML);
+  element.href = 'data:text/html;charset=UTF-8,' + encodeURIComponent("<!DOCTYPE html>" + document.documentElement.outerHTML);
   element.setAttribute('download', 'list.html');
   document.body.appendChild(element);
   alert("hi");
@@ -208,6 +208,12 @@ function download() {
   element.href = "index.js";
   element.setAttribute('download', 'index.js');
   element.click();
-  document.body.removeChild(element)
+  element.href = "favicon.png";
+  element.setAttribute('download', 'favicon.png');
+  element.click();
+  element.href = "Github-Mark-64px.png";
+  element.setAttribute('download', 'Github-Mark-64px.png');
+  element.click();
+  document.body.removeChild(element);
 
 }
