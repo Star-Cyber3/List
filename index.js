@@ -195,12 +195,10 @@ function removeLine(evt) {
 
 
 function download() {
-  alert("hi");
   let element = document.createElement('a');
   element.href = 'data:text/html;charset=UTF-8,' + encodeURIComponent("<!DOCTYPE html>" + document.documentElement.outerHTML);
   element.setAttribute('download', 'list.html');
   document.body.appendChild(element);
-  alert("hi");
   element.click();
   element.href = "style.css";
   element.setAttribute('download', 'style.css');
