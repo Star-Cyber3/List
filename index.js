@@ -13,7 +13,7 @@ function init() {
   for (let i = 0; i < checkedList.length; i++) {
     let message = checkedList[i].querySelectorAll('.message')[0].innerHTML;
     checkedList[i].querySelectorAll('.editInput')[0].value = message;
-    checkedList[i].querySelectorAll('.editInput1')[0].setAttribute("checked", "")
+    checkedList[i].querySelectorAll('.check')[0].setAttribute("checked", "")
   }
   //---//
   // Start file download.
