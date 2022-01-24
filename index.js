@@ -209,8 +209,8 @@ function download() {
   element.href = "favicon.png";
   element.setAttribute('download', 'favicon.png');
   element.click();
-  element.href = "Github-Mark-64px.png";
-  element.setAttribute('download', 'Github-Mark-64px.png');
+  element.href = "github-mark.png";
+  element.setAttribute('download', 'github-mark.png');
   element.click();
   document.body.removeChild(element);
 
