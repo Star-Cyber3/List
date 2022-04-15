@@ -8,13 +8,27 @@ function init() {
   let checkedList = document.querySelector("#checkedList").childNodes;
   for (let i = 0; i < list.length; i++) {
     let message = list[i].querySelectorAll('.message')[0].innerHTML;
-    list[i].querySelectorAll('.editInput1')[0].value = message;
+    let input = checkedList[i].querySelectorAll('.editInput1')[0];
+    let check = checkedList[i].querySelectorAll('.check')[0];
+    let delBtn = checkedList[i].querySelectorAll('.removeLine')[0];
+    input.value = message;
+    addEvents(check, delBtn);
   }
   for (let i = 0; i < checkedList.length; i++) {
     let message = checkedList[i].querySelectorAll('.message')[0].innerHTML;
-    checkedList[i].querySelectorAll('.editInput')[0].value = message;
-    checkedList[i].querySelectorAll('.check')[0].setAttribute("checked", "")
+    let input = checkedList[i].querySelectorAll('.editInput')[0];
+    let check = checkedList[i].querySelectorAll('.check')[0];
+    let delBtn = checkedList[i].querySelectorAll('.removeLine')[0];
+    input.value = message;
+    check.setAttribute("checked", "");
+    addEvents(check, delBtn);
   }
+
+function addEvents (check, delBtn) {
+  check.addEventListener("click", checked);
+  delBtn.addEventListener('click', removeLine);
+}
+
   //---//
   // Start file download.
   document.getElementById("dwn-btn").addEventListener("click", function() {
@@ -125,7 +139,7 @@ function add() {
 }
 
 function input(evt) {
-  let message = evt.parentNode.querySelectorAll(".message"); //error
+  let message = evt.parentNode.querySelectorAll(".message");
   console.log("change = " + evt.value)
   message[0].innerHTML = evt.value;
   console.log("updated");
