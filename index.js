@@ -118,7 +118,7 @@ function add() {
     newMessage.setAttribute("class", "message");
     newMessage.style.display = "none";
     newMessage.innerHTML = val;
-    newDiv.appendChild(newMessage)
+    newDiv.appendChild(newMessage);
     let newEditInput = document.createElement("INPUT");
     newEditInput.setAttribute("class", "editInput1");
     newEditInput.value = val;
