@@ -66,9 +66,10 @@ function doneSetting() {
   hr0.style.display = "none";
   const hr1 = document.querySelector("#hr1")
   hr1.style.display = "none";
-  // make lines 2 and 3 disappeer;
+  // make lines 2 and 3 disappear;
   const list = document.querySelector("#list");
   const settingTab0 = document.querySelector("#settingTab0").value;
+  const settingTab1 = document.querySelector("#settingTab1").value;
   // get settingTab0's value
   settings.addEventListener('click', setting);
   // re-add the click eventListener for setting;
@@ -77,8 +78,6 @@ function doneSetting() {
   const div1 = document.querySelectorAll(".textSettings1");
   const checkedList = document.querySelector("#checkedList");
   if (settingTab0 == 0) {
-    hr0.style.display = "block";
-    hr1.style.display = "block";
     // if the value of settingTab0 is 0 (option 1), then do this;
     hr0.style.display = "block";
     hr1.style.display = "block";
@@ -93,6 +92,9 @@ function doneSetting() {
         list.appendChild(elm);
       });
     }
+  }
+  if (settingTab1 = 1) {
+
   }
   settingGroup0.style.display = "none";
   // set the settingGroup's display to none;
@@ -135,14 +137,19 @@ function add() {
     console.log("user input = " + val);
   } else {
     alert("Enter some text");
+    console.error("no text");
   }
 }
 
 function input(evt) {
-  let message = evt.parentNode.querySelectorAll(".message");
-  console.log("change = " + evt.value)
-  message[0].innerHTML = evt.value;
-  console.log("updated");
+  if (delEmp == false) {
+    let message = evt.parentNode.querySelectorAll(".message");
+    console.log("change = " + evt.value)
+    message[0].innerHTML = evt.value;
+    console.log("updated");
+  } else if (evt.value == "") {
+    evt.parentNode.remove();
+  }
 }
 
 function checked(evt) {
